@@ -20,6 +20,8 @@ cd openwrt-v21
 cd xq-21.02.3
 
 ./xupdate.sh -f
+./xupdate.sh
 
 ./xmake.sh -f -t r3d
+./xmake.sh -t r3d
 ```

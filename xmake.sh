@@ -67,6 +67,7 @@ fi
 
 #make tools/install -j$MAKE_JOBS
 #make toolchain/install -j$MAKE_JOBS
-
-make PARALLEL_BUILD=1 -j $MAKE_JOBS download world
+rm -f $XDIR/package/addons/qBittorrent/qtbase/patches/010-gcc11.patch
+# make PARALLEL_BUILD=1 -j $MAKE_JOBS download world V=s
+make -j 1 world V=s
 
