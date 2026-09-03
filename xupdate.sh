@@ -74,7 +74,7 @@ echo -e "${GREEN}SUCCESS:${NC} update feeds B!!"
 
 CLONE_ADDONS=true
 if [ "$CLONE_ADDONS" = "true" ]; then
-	mkdir $XADDONSDIR
+	mkdir -p "$XADDONSDIR"
 	pkg_lst=$( get_cfg_expkg_lst "$ADDONSCFG" )
 	for pkg in $pkg_lst; do
 		value=$( get_cfg_expkg_url "$ADDONSCFG" $pkg )
