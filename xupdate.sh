@@ -4,7 +4,7 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 export XDIR=$SCRIPT_DIR
 export XADDONSDIR=$XDIR/package/addons
 FEEDSDIR=$XDIR/package/feeds
-ADDONSCFG=$XDIR/../_addons.config
+ADDONSCFG=$XDIR/_addons.config
 
 RED='\033[0;31m'
 GREEN='\033[0;32m'
