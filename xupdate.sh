@@ -67,6 +67,8 @@ if [ "$OPT_FULL_UPDATE" = "true" ]; then
 	rm -rf feeds/packages/net/{xray-core,v2ray-geodata,sing-box,chinadns-ng,dns2socks,hysteria,ipt2socks,microsocks,naiveproxy,shadowsocks-rust,shadowsocksr-libev,simple-obfs,tcping,v2ray-plugin,xray-plugin,geoview,shadow-tls}
 	rm -rf package/addons/passwall_packages
 	git clone https://github.com/Openwrt-Passwall/openwrt-passwall-packages.git package/addons/passwall_packages
+	rm -rf feeds\packages\lang\golang
+	git clone https://github.com/sbwml/packages_lang_golang -b 21.x feeds/packages/lang/golang
 	./scripts/feeds install -a
 fi
 
