@@ -44,5 +44,5 @@ find . -maxdepth 1 -type f -name "*.config" -exec cp {} $XTOPDIR \; >/dev/null
 find . -maxdepth 1 -type f -name "*.json" -exec cp {} $XTOPDIR \; >/dev/null
 
 echo "Repository '$TARGET_BRANCH' created!"
-#cd $XTOPDIR  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
+#cd $XTOPDIR 
 
